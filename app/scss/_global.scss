@@ -1,0 +1,114 @@
+@import '../scss/fonts';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nord-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  // color: $text;
+  // font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs {
+  &__inner {
+    padding: 35px 0px 30px;
+    overflow: hidden;
+    max-width: 1200px;
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+
+      &+li {
+        padding-left: 24px;
+
+        &::before {
+          content: '-';
+          position: absolute;
+          left: 8px;
+          color: black;
+        }
+      }
+
+      &:last-child {
+
+        a,
+        span {
+          color: grey;
+        }
+      }
+    }
+
+    a {
+      color: #b0bec5;
+    }
+  }
+}
+
+.header__menu {
+  a.menu-active {
+    background-color: #fff;
+    color: #00aeef;
+  }
+}
+
+// h2:after {
+//   position: absolute;
+//   content: '';
+//   width: 8px;
+//   height: 3px;
+//   bottom: 0;
+//   height: auto;
+//   background: linear-gradient(to right, #fd4682 0%, #fd4682 33.33%, #fde642 33.33%, #fde642 66.66%, #54b9fd 66.66%, #54b9fd 100%);
+// }
+
+
+
+// Footer fixed to the bottom
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}

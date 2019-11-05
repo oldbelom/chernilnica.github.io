@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Nord-Regular";
+
+  src: url("../fonts/NordRegular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/NordRegular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nord-Medium";
+
+  src: url("../fonts/NordMedium.ttf") format("ttf"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?y535lp');
+  src:  url('../fonts/icomoon.eot?y535lp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?y535lp') format('truetype'),
+    url('../fonts/icomoon.woff?y535lp') format('woff'),
+    url('../fonts/icomoon.svg?y535lp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-phone:before {
+  content: "\f095";
+}
