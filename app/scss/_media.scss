@@ -1,6 +1,16 @@
+@media (max-width: 1440px) {
+  .main__services {
+    background-position: 100% 100%;
+  }
+}
+
 @media (max-width: 1180px) {
   .services__item {
     flex-basis: calc(33.3333% - 30px);
+  }
+
+  .main__services {
+    background-position: 120% 100%;
   }
 }
 
@@ -39,6 +49,9 @@
 }
 
 @media (max-width: 880px) {
+  .main__services{
+    background: none;
+  }
   .contacts__inner {
     display: block;
   }
@@ -92,18 +105,21 @@
   .main__info {
     padding-top: 20px;
     padding-bottom: 30px;
-  
-    h1, h2 {
+
+    h1,
+    h2 {
       text-align: center;
       margin-bottom: 40px;
       line-height: 35px;
     }
   }
+
   .main__features-inner {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .main__features-item{
+
+  .main__features-item {
     width: 50%;
   }
 }
