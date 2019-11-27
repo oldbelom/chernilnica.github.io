@@ -1,4 +1,4 @@
-@import '../scss/fonts';
+@import '../scss/fonts.scss';
 
 html {
   box-sizing: border-box;
@@ -14,8 +14,7 @@ body {
   font-family: "Nord-Regular", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  // color: $text;
-  // font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .container {
@@ -80,18 +79,6 @@ li {
     color: #00aeef;
   }
 }
-
-// h2:after {
-//   position: absolute;
-//   content: '';
-//   width: 8px;
-//   height: 3px;
-//   bottom: 0;
-//   height: auto;
-//   background: linear-gradient(to right, #fd4682 0%, #fd4682 33.33%, #fde642 33.33%, #fde642 66.66%, #54b9fd 66.66%, #54b9fd 100%);
-// }
-
-
 
 // Footer fixed to the bottom
 html,
